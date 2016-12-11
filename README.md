@@ -24,5 +24,6 @@ This application used :
 - a class "WrapLayout" taken from http://tips4java.wordpress.com/2008/11/06/wrap-layout/ and originally written by Rob Camick.
 - the Java image-scaling library "imgscalr" you can found here : http://www.thebuzzmedia.com/software/imgscalr-java-image-scaling-library/
 with source code on git-hub here : https://github.com/thebuzzmedia/imgscalr under "Apache 2 License".
+- A alphanum sorting algorithm under GNU Lesser General Public License taken from http://www.davekoelle.com/alphanum.html
 
 Free to use, modify and distribute.

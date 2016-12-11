@@ -15,6 +15,7 @@ import java.io.File;
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.Comparator;
 import java.util.List;
 import java.util.ResourceBundle;
 import java.util.concurrent.ExecutorService;
@@ -164,7 +165,7 @@ public class ImgReorderApp {
             imgPanel.removeAll();
             imageList.clear();
             File[] dirContent = currentDirectory.listFiles();
-            Arrays.sort(dirContent);
+            Arrays.sort(dirContent, Comparator.comparing((File f) -> f.getName(), new AlphaNumComparator()));
             for (File imgFile : dirContent) {
                 if (isImageFile(imgFile)) {
                     JLabel label = new JLabel(imgFile.getName());
